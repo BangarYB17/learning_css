@@ -1,0 +1,27 @@
+h4{color: orange;
+   background-color: aquamarine;
+   font-size: 40px;
+}
+p{
+    color:yellow;
+    background-color: black;
+    font-size: 25px;
+}
+table{
+    height: 200px;
+    width:400px;
+}
+caption{
+    color:red;
+    background-color: black;
+}
+thead,tfoot{
+    background-color: yellow;
+    color:red;
+}
+
+tbody{
+    background-color:aqua;
+    color:red;
+
+}
