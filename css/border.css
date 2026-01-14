@@ -1,0 +1,85 @@
+/*border properties --> solid,double,dashed,dotted,inset ,outset,groove,ridge  */
+.b_img1{
+    width: 400px;
+    border: 8px solid red;
+}
+.b_img2{
+    width:400px;
+    border: 6px dashed rgb(246, 136, 1);
+}
+.b_img3{
+    width:400px;
+    border: 6px dotted gold;
+}
+.b_img4{
+    width: 400px;
+    border: 5px inset rgb(249, 35, 156);
+}
+.b_img5{
+    width: 400px;
+    border: 6px groove green;
+}
+.b_img6{
+    width: 400px;
+    border: 7px ridge rgb(60, 60, 204);
+}
+
+.b_img7{
+    width: 400px;
+    border: 5px solid;
+    /* border-top-color: blueviolet;
+    border-right-color: aqua;
+    border-bottom-color: brown;
+    border-left-color: blue;    */
+    border-color: blueviolet aqua brown blue;
+}
+
+.b_img8{
+    width: 400px;
+    border: 5px double green;
+    border-radius: 4%;
+}
+.b_img9{
+    width: 400px;
+    border:6px solid;
+    border-color:blue brown yellow green;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 40px; */
+    border-radius: 10px 20px 10px 20px;
+}
+
+
+/* box model styling */
+.simple{
+    border: 5px solid red;
+}
+.box_model1{
+    border: 4px solid green;
+    padding: 40px;
+    margin: 50px;
+}
+.box_model2{
+    font-family: 'Courier New', Courier, monospace;
+    border: 5px solid yellow;
+    /* padding:40px; all sides */
+
+    /* padding-top: 20px;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    padding-left: 35px; */ 
+
+    /* padding:10px 15px; ---> top-bottom  left-right*/
+
+    padding:10px 20px 30px 40px;  /* top right bottom left*/ 
+
+    /* margin:40px;  all sides*/
+    /* margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px; */
+
+    /* margin:10px 15px; ---> top-bottom  left-right */
+    margin:10px 20px 30px 40px;  top right bottom left
+}
