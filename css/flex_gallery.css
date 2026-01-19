@@ -1,0 +1,67 @@
+/* flex examples */
+.flex_items{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    
+   
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+    justify-content:space-evenly;
+}
+figcaption{
+    text-align: center;
+}
+
+/* hover */
+h1{
+    color:red;
+    text-shadow: 7px 7px 7px yellow;
+}
+h1:hover{
+    color:rgb(255, 102, 0);
+    text-shadow: 7px 7px 7px rgb(209, 22, 22);
+}
+.style{
+    border:2px solid black;
+    padding:20px;
+}
+
+/* psuedo class */
+.style:hover{
+    background: linear-gradient(orange ,white, green);
+    margin: 40px;
+}
+h2:active{
+    color:red;
+    text-shadow: 8px 8px 8px rgb(255, 64, 0);
+    cursor: pointer;
+}
+a:visited{
+    color:red;
+}
+input:focus{
+    color:black;
+    background-color: rgb(224, 131, 10);
+    border: 4px solid green;
+    padding:4px;
+}
+
+/* psuedo element */
+p::first-letter{
+    color:red;
+    font-size: 30px;
+}
+
+p::first-line{
+    color:blue;
+}
+
+::selection{
+    color:red;
+    background-color: aqua;
+}

@@ -110,3 +110,23 @@ h1{
     height:600px;
     background:conic-gradient(from 90deg,red,green,yellow,orange,brown)
 }
+
+/* flex properties*/
+.flex_items{
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    background-color: aqua;
+    font-size: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: row wrap; */
+    justify-content:space-evenly;
+}
