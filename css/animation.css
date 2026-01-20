@@ -1,0 +1,130 @@
+/* nth child(pseudo class )example */
+ul{
+    width:200px;
+    height:50px;
+    list-style-type: none;
+    font-weight: 900;
+}
+li{
+    padding:10px;
+    border:2px solid rgb(146, 140, 140);
+    margin-bottom: 6px;
+    border-radius: 10px;
+    text-align: center;
+}
+li:nth-child(odd){
+    background-color: rgb(218, 85, 19);
+}
+li:nth-child(even){
+    background-color: rgb(243, 243, 2);
+}
+li:first-child{
+    background-color: aqua;
+}
+li:last-child{
+    background-color: blueviolet;
+}
+li:nth-child(5){
+    background-color: rgb(2, 159, 57);
+}
+
+/* transfrom */
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+    padding-top: 50px;
+}
+.box{
+    border-radius: 15px;
+    height:150px;
+    width:150px;
+    background-color: rgb(43, 119, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 900;
+    transition: transform 2s ease-out 500ms;
+}
+.box1:hover{
+    transform: translate(125px,125px);
+}
+.box2:hover{
+    transform: translatex(-80px);
+}
+.box3:hover{
+    transform: translateY(-80px);
+}
+.box4:hover{
+    transform: rotate(-720deg);
+}
+.box5:hover{
+    transform: skewx(20deg);
+}
+.box6:hover{
+    transform: skewy(20deg);
+}
+.box7:hover{
+    transform: skew(10deg,20deg);
+}
+.box8:hover{
+    transform: scale(1.5);
+}
+.box9:hover{
+    transform: scalex(1.5);
+}
+.box10:hover{
+    transform: scaley(1.5);
+}
+.box11:hover{
+    transform: rotate(360deg) translate(100px,100px) scale(2);
+}
+
+/* simple animation */
+/* #animation{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(170, 8, 8);
+    border-radius: 50%;
+    animation: movingbox;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 2s; */
+    /* animation-direction: alternate;
+    position: relative;
+} */
+/* @keyframes movingbox{
+    0%{background-color: rgb(226, 7, 7);left: 0px; top: 0px;}
+    25%{background-color: rgb(225, 200, 12);left: 300px; top: 0px;}
+    50%{background-color: rgb(42, 165, 69);left: 300px; top: 300px;}
+    75%{background-color: rgb(42, 132, 165);left: 0px; top: 300px;}
+    100%{background-color: rgb(211, 5, 5);left: 0px; top: 0px;}
+} */ 
+
+#img{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    animation-name: imgmoving;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    animation-direction: alternate;
+}
+
+@keyframes imgmoving {
+    0%{ background-image: url("/images/tiger.jpg"); left: 0px;top: 0px;}
+    25%{ background-image: url("/images/bigwalls.jpg"); left: 300px;top: 0px;}
+    50%{ background-image: url("/images/crown.png"); left: 300px;top: 300px;}
+    75%{ background-image: url("/images/butterfly.png"); left: 0px;top: 300px;}
+    100%{ background-image: url("/images/tiger.jpg"); left: 0px;top: 0px;}
+}
+
