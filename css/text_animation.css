@@ -1,0 +1,95 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    letter-spacing: 6px;
+    font-size: 70px;
+    font-weight: 800;
+    perspective: 100px;
+}
+.container > b{
+    height: 80px;
+    box-shadow: 0px 30px 15px grey;
+    background:linear-gradient(to right , yellow ,green , orange , red);
+    background-clip: text;
+    color:transparent;
+    transform-origin:bottom;
+    /* transform: rotatex(-85deg); */
+    animation: getup 10s infinite;
+    
+}
+.container > b:nth-child(1){
+    animation-delay: 0s;
+}
+.container > b:nth-child(2){
+    animation-delay: 0.25s;
+}
+.container > b:nth-child(3){
+    animation-delay: 0.50s;
+}
+.container > b:nth-child(4){
+    animation-delay: 0.75s;
+}
+.container > b:nth-child(5){
+    animation-delay: 1s;
+}
+.container > b:nth-child(6){
+    animation-delay: 1.25s;
+}
+.container > b:nth-child(7){
+    animation-delay: 1.50s;
+}
+.container > b:nth-child(8){
+    animation-delay: 1.75s;
+}
+.container > b:nth-child(9){
+    animation-delay: 2s;
+}
+
+@keyframes getup{
+    from{transform:rotatex(85deg);}
+    10%,50%{transform: rotatex(85deg);}
+    60% to{transform: rotatex(85deg);}
+}
+
+body{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.swing{
+    animation: swing 1.5s ease-in infinite alternate;
+    transform-origin: top center;
+    position: relative;
+}
+.swing  img{
+    border: 14px groove yellow;
+    box-shadow: 9px 9px 9px rgb(62, 61, 61);
+    display: block;
+}
+@keyframes swing{
+    0%{transform:rotate(3deg);}
+    100%{transform: rotate(-3deg);}
+}
+
+.swing::before{
+    content: " ";
+    position: absolute;
+    top:-30px;
+    left:50%;
+    transform: translateX(-50deg);
+    width:6px;
+    height:30px;
+    background-color: black;
+}
+.swing::after{
+    content:"\2b24";
+    position: absolute;
+    top:-35px;
+    left:182px;
+    transform: translate(-50%);
+    height:10px
+}
